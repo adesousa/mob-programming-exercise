@@ -2,8 +2,8 @@ var API_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 // récupérer les photos depuis l'API Pixabay
 function getPicturesFromPixabay(query) {
-    var url = 'https://pixabay.com/api/?key=' + API_KEY + '&q=${query}&pretty=true&image_type=photo';
-
+    var url = 'https://pixabay.com/api/?key=' + API_KEY + '&q='+ query + '&pretty=true&image_type=photo';
+    
     // ajax request
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
